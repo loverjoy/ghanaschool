@@ -121,9 +121,24 @@ export default function Login() {
               onChange={(e) => setAgree(e.target.checked)}
             />
             <label htmlFor="agree-checkbox" className="text-xs text-slate-600 leading-normal select-none">
-              I agree to the <a href="#" className="text-[#0d5c41] hover:underline font-semibold">User Agreement</a> and{' '}
-              <a href="#" className="text-[#0d5c41] hover:underline font-semibold">Privacy Policy</a>. This system is for
-              authorized school staff only.
+              I agree to the{' '}
+              <a
+                href="https://github.com/loverjoy/ghanaschool/blob/main/USER_AGREEMENT.md"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-[#0d5c41] hover:underline font-semibold"
+              >
+                User Agreement
+              </a>{' '}
+              and{' '}
+              <a
+                href="https://github.com/loverjoy/ghanaschool/blob/main/PRIVACY_POLICY.md"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-[#0d5c41] hover:underline font-semibold"
+              >
+                Privacy Policy
+              </a>. This system is for authorized school staff only.
             </label>
           </div>
 
