@@ -162,11 +162,6 @@ export default function Login() {
             Forgot password?
           </a>
         </div>
-
-        {/* Watermark Logo */}
-        <div className="absolute bottom-2.5 right-4 text-[10px] text-slate-400 font-medium">
-          by Medo
-        </div>
       </div>
 
       {/* Subtle Preset Buttons for Developer Testing */}

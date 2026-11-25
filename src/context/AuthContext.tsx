@@ -70,6 +70,18 @@ export const AuthProvider: React.FC<{ children: React.ReactNode }> = ({ children
         body: JSON.stringify({ username, password })
       });
 
+      if (!response.ok) {
+        // Non-JSON responses (e.g., proxy/server error pages) must not throw a raw parse error.
+        const errorText = await response.text();
+        let parsed: any = {};
+        try {
+          parsed = JSON.parse(errorText);
+        } catch {
+          // ignore — fall back to generic message
+        }
+        return { success: false, error: parsed.error || `HTTP ${response.status} Error` };
+      }
+
       const result = await response.json();
       if (result.success) {
         const u = { ...result.user, school_id: result.user.schoolName || null };
