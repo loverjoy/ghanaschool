@@ -1,0 +1,548 @@
+{
+  "schools": [
+    {
+      "id": "sch-01",
+      "name": "Accra High School",
+      "code": "AHS01",
+      "region": "Greater Accra",
+      "multiStreamMode": true,
+      "passMark": 50,
+      "createdAt": "2025-01-15T08:00:00Z"
+    },
+    {
+      "id": "sch-02",
+      "name": "Kumasi Academy",
+      "code": "KAC02",
+      "region": "Ashanti",
+      "multiStreamMode": false,
+      "passMark": 55,
+      "createdAt": "2025-02-10T09:00:00Z"
+    }
+  ],
+  "users": [
+    {
+      "id": "u-super",
+      "username": "superadmin",
+      "email": "superadmin@moe.gov.gh",
+      "password": "password",
+      "role": "superadmin",
+      "name": "Efua Mensah",
+      "schoolName": null,
+      "designation": "MoE Coordinator"
+    },
+    {
+      "id": "u-accra-admin",
+      "username": "kofi.appiah",
+      "email": "kofi.appiah@accrahigh.edu.gh",
+      "password": "password",
+      "role": "admin",
+      "name": "Kofi Appiah",
+      "schoolName": "Accra High School",
+      "designation": "Headmaster"
+    },
+    {
+      "id": "u-kumasi-admin",
+      "username": "kwame.owusu",
+      "email": "kwame.owusu@kumasi.edu.gh",
+      "password": "password",
+      "role": "admin",
+      "name": "Kwame Owusu",
+      "schoolName": "Kumasi Academy",
+      "designation": "Principal"
+    },
+    {
+      "id": "u-ama",
+      "username": "ama.serwaa",
+      "email": "ama.serwaa@accrahigh.edu.gh",
+      "password": "password",
+      "role": "teacher",
+      "name": "Ama Serwaa",
+      "schoolName": "Accra High School",
+      "designation": "Tutor"
+    },
+    {
+      "id": "u-kwame",
+      "username": "kwame.boateng",
+      "email": "kwame.boateng@accrahigh.edu.gh",
+      "password": "password",
+      "role": "teacher",
+      "name": "Kwame Boateng",
+      "schoolName": "Accra High School",
+      "designation": "Science Tutor"
+    }
+  ],
+  "students": [
+    {
+      "studentId": "STU20260001",
+      "name": "Yao Osei",
+      "dateOfBirth": "2013-05-14",
+      "gender": "Male",
+      "classLevel": "JHS 1",
+      "stream": "A",
+      "parentName": "Isaac Osei",
+      "parentContact": "+233 24 123 4567",
+      "status": "Active",
+      "enrolledAt": "2025-09-01T08:00:00Z",
+      "schoolName": "Accra High School",
+      "photoUrl": "",
+      "csspsChoices": [
+        {
+          "schoolName": "Achimota School",
+          "category": "Category A",
+          "program": "General Science"
+        },
+        {
+          "schoolName": "Prempeh College",
+          "category": "Category A",
+          "program": "General Science"
+        },
+        {
+          "schoolName": "Accra Academy",
+          "category": "Category B",
+          "program": "General Arts"
+        },
+        {
+          "schoolName": "St. Thomas Aquinas",
+          "category": "Category B",
+          "program": "General Arts"
+        },
+        {
+          "schoolName": "Presby Boys SHS",
+          "category": "Category A",
+          "program": "General Science"
+        },
+        {
+          "schoolName": "Adisadel College",
+          "category": "Category A",
+          "program": "General Science"
+        },
+        {
+          "schoolName": "Giffard SHS",
+          "category": "Category C",
+          "program": "Home Economics"
+        },
+        {
+          "schoolName": "Odorgonno SHS",
+          "category": "Category C",
+          "program": "Visual Arts"
+        }
+      ]
+    },
+    {
+      "studentId": "STU20260002",
+      "name": "Adwoa Mensah",
+      "dateOfBirth": "2013-08-22",
+      "gender": "Female",
+      "classLevel": "JHS 1",
+      "stream": "A",
+      "parentName": "Efua Mensah",
+      "parentContact": "+233 20 987 6543",
+      "status": "Active",
+      "enrolledAt": "2025-09-01T08:00:00Z",
+      "schoolName": "Accra High School",
+      "photoUrl": "",
+      "csspsChoices": []
+    },
+    {
+      "studentId": "STU20260003",
+      "name": "Kwabena Owusu",
+      "dateOfBirth": "2013-02-10",
+      "gender": "Male",
+      "classLevel": "JHS 1",
+      "stream": "B",
+      "parentName": "Mary Owusu",
+      "parentContact": "+233 55 456 7890",
+      "status": "Active",
+      "enrolledAt": "2025-09-01T08:00:00Z",
+      "schoolName": "Accra High School",
+      "photoUrl": "",
+      "csspsChoices": []
+    }
+  ],
+  "teachers": [
+    {
+      "teacherId": "TCH0001",
+      "name": "Ama Serwaa",
+      "subject": "Mathematics",
+      "phone": "+233 24 000 0001",
+      "email": "ama.serwaa@accrahigh.edu.gh",
+      "qualification": "B.Ed Mathematics",
+      "classAssignments": [
+        {
+          "classLevel": "JHS 1",
+          "stream": "A",
+          "subjectCode": "MTH"
+        }
+      ],
+      "registrationCode": "REG-AMA-123",
+      "authorizedByAdmin": true,
+      "schoolName": "Accra High School",
+      "isClassTeacher": true,
+      "homeroomClass": {
+        "classLevel": "JHS 1",
+        "stream": "A"
+      }
+    },
+    {
+      "teacherId": "TCH0002",
+      "name": "Kwame Boateng",
+      "subject": "Integrated Science",
+      "phone": "+233 24 000 0002",
+      "email": "kwame.boateng@accrahigh.edu.gh",
+      "qualification": "B.Sc Physics",
+      "classAssignments": [
+        {
+          "classLevel": "JHS 1",
+          "stream": "A",
+          "subjectCode": "SCI"
+        },
+        {
+          "classLevel": "JHS 1",
+          "stream": "B",
+          "subjectCode": "SCI"
+        }
+      ],
+      "registrationCode": "REG-KWA-456",
+      "authorizedByAdmin": true,
+      "schoolName": "Accra High School",
+      "isClassTeacher": false
+    }
+  ],
+  "subjects": [
+    {
+      "code": "MTH",
+      "name": "Mathematics",
+      "applicableLevels": [
+        "KG1",
+        "KG2",
+        "Primary 1",
+        "Primary 2",
+        "Primary 3",
+        "Primary 4",
+        "Primary 5",
+        "Primary 6",
+        "JHS 1",
+        "JHS 2",
+        "JHS 3"
+      ],
+      "schoolName": "Accra High School"
+    },
+    {
+      "code": "SCI",
+      "name": "Integrated Science",
+      "applicableLevels": [
+        "Primary 4",
+        "Primary 5",
+        "Primary 6",
+        "JHS 1",
+        "JHS 2",
+        "JHS 3"
+      ],
+      "schoolName": "Accra High School"
+    },
+    {
+      "code": "ENG",
+      "name": "English Language",
+      "applicableLevels": [
+        "Primary 1",
+        "Primary 2",
+        "Primary 3",
+        "Primary 4",
+        "Primary 5",
+        "Primary 6",
+        "JHS 1",
+        "JHS 2",
+        "JHS 3"
+      ],
+      "schoolName": "Accra High School"
+    },
+    {
+      "code": "GHA",
+      "name": "Ghanaian Language",
+      "applicableLevels": [
+        "Primary 1",
+        "Primary 2",
+        "Primary 3",
+        "Primary 4",
+        "Primary 5",
+        "Primary 6",
+        "JHS 1",
+        "JHS 2",
+        "JHS 3"
+      ],
+      "schoolName": "Accra High School"
+    }
+  ],
+  "assessments": [
+    {
+      "id": "asm-01",
+      "studentId": "STU20260001",
+      "subjectCode": "MTH",
+      "term": "Term 1",
+      "year": 2026,
+      "classScore": 80,
+      "examScore": 90,
+      "schoolName": "Accra High School"
+    },
+    {
+      "id": "asm-02",
+      "studentId": "STU20260002",
+      "subjectCode": "MTH",
+      "term": "Term 1",
+      "year": 2026,
+      "classScore": 65,
+      "examScore": 75,
+      "schoolName": "Accra High School"
+    },
+    {
+      "id": "asm-03",
+      "studentId": "STU20260003",
+      "subjectCode": "MTH",
+      "term": "Term 1",
+      "year": 2026,
+      "classScore": 40,
+      "examScore": 50,
+      "schoolName": "Accra High School"
+    }
+  ],
+  "notices": [
+    {
+      "id": "not-1",
+      "title": "Staff Meeting",
+      "content": "End of term staff meeting scheduled for Friday at 2:00 PM.",
+      "date": "2026-06-15",
+      "schoolName": "Accra High School"
+    },
+    {
+      "id": "not-2",
+      "title": "PTA Levy Due",
+      "content": "Please remind parents that PTA Levies should be paid before next Monday.",
+      "date": "2026-06-16",
+      "schoolName": "Accra High School"
+    }
+  ],
+  "leaveRequests": [
+    {
+      "id": "leave-1",
+      "teacherId": "TCH0002",
+      "startDate": "2026-06-20",
+      "endDate": "2026-06-25",
+      "reason": "Medical Checkup in Kumasi",
+      "status": "Pending",
+      "approvedBy": null,
+      "createdAt": "2026-06-15T09:00:00Z",
+      "schoolName": "Accra High School"
+    }
+  ],
+  "timetables": [
+    {
+      "id": "tp-01",
+      "classLevel": "JHS 1",
+      "stream": "A",
+      "day": "Monday",
+      "startTime": "08:00",
+      "endTime": "09:00",
+      "subjectCode": "MTH",
+      "teacherId": "TCH0001",
+      "isBreak": false,
+      "schoolName": "Accra High School"
+    },
+    {
+      "id": "tp-02",
+      "classLevel": "JHS 1",
+      "stream": "A",
+      "day": "Monday",
+      "startTime": "09:00",
+      "endTime": "10:00",
+      "subjectCode": "SCI",
+      "teacherId": "TCH0002",
+      "isBreak": false,
+      "schoolName": "Accra High School"
+    },
+    {
+      "id": "tp-03",
+      "classLevel": "JHS 1",
+      "stream": "A",
+      "day": "Monday",
+      "startTime": "10:00",
+      "endTime": "10:30",
+      "subjectCode": "",
+      "teacherId": "",
+      "isBreak": true,
+      "schoolName": "Accra High School"
+    }
+  ],
+  "feeTypes": [
+    {
+      "id": "ft-tui",
+      "name": "Tuition Fee",
+      "amount": 1200,
+      "schoolName": "Accra High School"
+    },
+    {
+      "id": "ft-pta",
+      "name": "PTA Levy",
+      "amount": 150,
+      "schoolName": "Accra High School"
+    },
+    {
+      "id": "ft-exam",
+      "name": "Exam Fee",
+      "amount": 100,
+      "schoolName": "Accra High School"
+    }
+  ],
+  "feePayments": [
+    {
+      "id": "pay-01",
+      "studentId": "STU20260001",
+      "feeTypeId": "ft-tui",
+      "amountPaid": 1200,
+      "paymentDate": "2026-06-01",
+      "receiptNumber": "REC-100201",
+      "term": "Term 1",
+      "year": 2026,
+      "collectorId": "u-accra-admin",
+      "schoolName": "Accra High School"
+    },
+    {
+      "id": "pay-02",
+      "studentId": "STU20260002",
+      "feeTypeId": "ft-tui",
+      "amountPaid": 600,
+      "paymentDate": "2026-06-02",
+      "receiptNumber": "REC-100202",
+      "term": "Term 1",
+      "year": 2026,
+      "collectorId": "u-accra-admin",
+      "schoolName": "Accra High School"
+    }
+  ],
+  "attendance": [
+    {
+      "id": "STU20260001_2026-06-15",
+      "studentId": "STU20260001",
+      "date": "2026-06-15",
+      "status": "Present",
+      "comment": "",
+      "term": "Term 1",
+      "year": 2026,
+      "schoolName": "Accra High School"
+    },
+    {
+      "id": "STU20260002_2026-06-15",
+      "studentId": "STU20260002",
+      "date": "2026-06-15",
+      "status": "Absent",
+      "comment": "Malaria fever",
+      "term": "Term 1",
+      "year": 2026,
+      "schoolName": "Accra High School"
+    }
+  ],
+  "questionBank": [
+    {
+      "id": "qb-seed-01",
+      "subjectCode": "MTH",
+      "classLevel": "JHS 1",
+      "term": "Term 1",
+      "topic": "Linear Equations",
+      "questionType": "MCQ",
+      "difficulty": "Easy",
+      "marks": 2,
+      "questionText": "Solve for x in the equation 3x + 7 = 22.",
+      "options": [
+        "x = 3",
+        "x = 5",
+        "x = 7",
+        "x = 15"
+      ],
+      "correctAnswer": "x = 5",
+      "explanation": "Subtract 7 from both sides to get 3x = 15, then divide by 3 to get x = 5.",
+      "createdBy": "u-ama",
+      "createdByName": "Ama Serwaa",
+      "createdAt": "2026-06-10T09:00:00Z",
+      "schoolName": "Accra High School"
+    },
+    {
+      "id": "qb-seed-02",
+      "subjectCode": "SCI",
+      "classLevel": "JHS 1",
+      "term": "Term 1",
+      "topic": "Photosynthesis & Plant Nutrition",
+      "questionType": "Short Answer",
+      "difficulty": "Medium",
+      "marks": 4,
+      "questionText": "State two raw materials required for photosynthesis and name the green pigment that traps sunlight.",
+      "options": [],
+      "correctAnswer": "Raw materials: Carbon dioxide (CO2) and Water (H2O). Green pigment: Chlorophyll.",
+      "explanation": "Award 1 mark for each raw material and 2 marks for correctly naming chlorophyll.",
+      "createdBy": "u-kwame",
+      "createdByName": "Kwame Boateng",
+      "createdAt": "2026-06-11T10:30:00Z",
+      "schoolName": "Accra High School"
+    },
+    {
+      "id": "qb-seed-03",
+      "subjectCode": "ENG",
+      "classLevel": "JHS 1",
+      "term": "Term 2",
+      "topic": "Parts of Speech",
+      "questionType": "MCQ",
+      "difficulty": "Easy",
+      "marks": 1,
+      "questionText": "Identify the adverb in the sentence: 'The students answered the BECE mock questions carefully.'",
+      "options": [
+        "students",
+        "answered",
+        "mock",
+        "carefully"
+      ],
+      "correctAnswer": "carefully",
+      "explanation": "'Carefully' modifies the verb 'answered' by describing how the action was performed.",
+      "createdBy": "u-accra-admin",
+      "createdByName": "Kofi Appiah",
+      "createdAt": "2026-06-12T11:15:00Z",
+      "schoolName": "Accra High School"
+    },
+    {
+      "id": "qb-seed-04",
+      "subjectCode": "SCI",
+      "classLevel": "JHS 2",
+      "term": "Term 1",
+      "topic": "States of Matter",
+      "questionType": "True/False",
+      "difficulty": "Easy",
+      "marks": 1,
+      "questionText": "Sublimation is the direct change of a substance from the solid state to the gaseous state without passing through the liquid state.",
+      "options": [
+        "True",
+        "False"
+      ],
+      "correctAnswer": "True",
+      "explanation": "Examples include camphor, iodine crystals, and dry ice (solid CO2).",
+      "createdBy": "u-kwame",
+      "createdByName": "Kwame Boateng",
+      "createdAt": "2026-06-13T08:45:00Z",
+      "schoolName": "Accra High School"
+    },
+    {
+      "id": "qb-seed-05",
+      "subjectCode": "MTH",
+      "classLevel": "JHS 3",
+      "term": "Term 3",
+      "topic": "Mensuration & Geometry",
+      "questionType": "Essay",
+      "difficulty": "Hard",
+      "marks": 10,
+      "questionText": "A cylindrical water tank in Accra has a radius of 1.4 m and a height of 3.0 m. Taking pi = 22/7, calculate: (a) the curved surface area of the tank, and (b) the volume of water it can hold in litres.",
+      "options": [],
+      "correctAnswer": "(a) Curved Surface Area = 2 * (22/7) * 1.4 * 3.0 = 26.4 m^2. (b) Volume = (22/7) * 1.4^2 * 3.0 = 18.48 m^3 = 18,480 litres.",
+      "explanation": "Award 4 marks for part (a), 4 marks for volume in m^3, and 2 marks for converting m^3 to litres (1 m^3 = 1000 litres).",
+      "createdBy": "u-ama",
+      "createdByName": "Ama Serwaa",
+      "createdAt": "2026-06-14T14:20:00Z",
+      "schoolName": "Accra High School"
+    }
+  ]
+}
